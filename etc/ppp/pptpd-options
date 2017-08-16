@@ -1,0 +1,17 @@
+auth
+name pptpd
+refuse-pap
+refuse-chap
+refuse-mschap
+require-mschap-v2
+require-mppe-128
+ms-dns 8.8.8.8 # Указываем DNS-сервер
+ms-dns 8.8.4.4 # Указываем второй DNS-сервер
+proxyarp
+nodefaultroute
+#debug
+logfile /var/log/pptpd.log
+lock
+nobsdcomp
+mtu 1400
+mru 1400
